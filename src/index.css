@@ -1,13 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  background-color: #123;
+  color: #fff;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-bottom: 1px solid #f3f3f3;
+  align-items: center;
+}
+
+.is-completed {
+  display: flex;
+  align-items: center;
+}
+
+.is-completed input {
+  margin-right: 10px;
+}
+
+.todo-item .del-btn:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel {
+  text-decoration: line-through;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form input {
+  flex: 5;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+form button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  background-color: #fff;
+  font-family: inherit;
 }
